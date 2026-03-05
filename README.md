@@ -41,5 +41,5 @@ This project is an ATR-shaped educational demo, not a full ATR Producer implemen
 ## Testing artifacts
 
 - JSON examples: `examples/fhir/`
-- Postman collection: `postman/atr-group-read.postman_collection.json`
+- Postman (full + Light): `postman/` (see `postman/README.md`)
 - Yaak files: `yaak/`

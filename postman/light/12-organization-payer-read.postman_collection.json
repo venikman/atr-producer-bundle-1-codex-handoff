@@ -1,0 +1,78 @@
+{
+  "info": {
+    "name": "ATR Bundle 1 Light - Organization - Payer Read",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "GET payer Organization by id."
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3301/fhir"
+    },
+    {
+      "key": "accessToken",
+      "value": "demo-atr-token"
+    },
+    {
+      "key": "groupId",
+      "value": "demo-group-001"
+    },
+    {
+      "key": "patientId",
+      "value": "demo-patient-001"
+    },
+    {
+      "key": "coverageId",
+      "value": "demo-coverage-001"
+    },
+    {
+      "key": "practitionerRoleId",
+      "value": "demo-pcp-001"
+    },
+    {
+      "key": "practitionerId",
+      "value": "demo-pcp-002"
+    },
+    {
+      "key": "providerOrganizationId",
+      "value": "demo-provider-org-001"
+    },
+    {
+      "key": "payerOrganizationId",
+      "value": "demo-payer"
+    },
+    {
+      "key": "missingId",
+      "value": "does-not-exist"
+    }
+  ],
+  "item": [
+    {
+      "name": "Organization - Payer Read",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/fhir+json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{accessToken}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/Organization/{{payerOrganizationId}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "Organization",
+            "{{payerOrganizationId}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
