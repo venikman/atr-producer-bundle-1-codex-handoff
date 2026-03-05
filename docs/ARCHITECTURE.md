@@ -12,7 +12,7 @@ This service is a compact producer-side FHIR server for one teaching path:
 ### Group
 
 ```text
-Postman/curl/Yaak
+examples/light cURL files
   -> GET /fhir/Group/:id
   -> bearer auth middleware
   -> group route
@@ -24,7 +24,7 @@ Postman/curl/Yaak
 ### References
 
 ```text
-Postman/curl/Yaak
+examples/light cURL files
   -> GET /fhir/{Patient|Coverage|PractitionerRole|Practitioner|Organization}/:id
   -> bearer auth middleware
   -> reference route handler
@@ -35,7 +35,7 @@ Postman/curl/Yaak
 ### Metadata
 
 ```text
-Postman/curl/Yaak
+examples/light cURL files
   -> GET /fhir/metadata
   -> capability statement builder
   -> application/fhir+json response

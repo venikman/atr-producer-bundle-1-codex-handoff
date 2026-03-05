@@ -112,18 +112,18 @@ Accept: application/fhir+json
 
 ## Example fixtures
 
-- `examples/fhir/group.demo-group-001.full.json`
-- `examples/fhir/group.demo-group-001.summary.json`
-- `examples/fhir/patient.demo-patient-001.json`
-- `examples/fhir/coverage.demo-coverage-001.json`
-- `examples/fhir/practitionerrole.demo-pcp-001.json`
-- `examples/fhir/practitioner.demo-pcp-002.json`
-- `examples/fhir/organization.demo-provider-org-001.json`
-- `examples/fhir/capabilitystatement.minimal.json`
-- `examples/fhir/operationoutcome.401.json`
-- `examples/fhir/operationoutcome.404.json`
-- `examples/fhir/operationoutcome.404.patient.json`
-- `examples/fhir/operationoutcome.404.coverage.json`
-- `examples/fhir/operationoutcome.404.practitionerrole.json`
-- `examples/fhir/operationoutcome.404.practitioner.json`
-- `examples/fhir/operationoutcome.404.organization.json`
+- `examples/curl/group.demo-group-001.full.json`
+- `examples/curl/group.demo-group-001.summary.json`
+- `examples/curl/patient.demo-patient-001.json`
+- `examples/curl/coverage.demo-coverage-001.json`
+- `examples/curl/practitionerrole.demo-pcp-001.json`
+- `examples/curl/practitioner.demo-pcp-002.json`
+- `examples/curl/organization.demo-provider-org-001.json`
+- `examples/curl/capabilitystatement.minimal.json`
+- `examples/curl/operationoutcome.401.json`
+- `examples/curl/operationoutcome.404.json`
+- `examples/curl/operationoutcome.404.patient.json`
+- `examples/curl/operationoutcome.404.coverage.json`
+- `examples/curl/operationoutcome.404.practitionerrole.json`
+- `examples/curl/operationoutcome.404.practitioner.json`
+- `examples/curl/operationoutcome.404.organization.json`

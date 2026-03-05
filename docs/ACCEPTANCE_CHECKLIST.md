@@ -51,6 +51,5 @@
 
 ## Testing artifacts
 
-- [ ] examples under `examples/fhir/` match current server behavior
-- [ ] Postman collection matches implemented endpoints and error cases
-- [ ] Yaak OpenAPI and cURL files match implemented endpoints and error cases
+- [ ] examples under `examples/curl/` match current server behavior
+- [ ] cURL request examples in `examples/light/` match implemented endpoints and error cases

@@ -40,6 +40,5 @@ This project is an ATR-shaped educational demo, not a full ATR Producer implemen
 
 ## Testing artifacts
 
-- JSON examples: `examples/fhir/`
-- Postman (full + Light): `postman/` (see `postman/README.md`)
-- Yaak files: `yaak/`
+- JSON fixtures: `examples/curl/`
+- cURL request files: `examples/light/`

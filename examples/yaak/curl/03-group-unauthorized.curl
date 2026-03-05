@@ -1,3 +1,0 @@
-curl --request GET \
-  --url "{{BASE_URL}}/Group/{{GROUP_ID}}" \
-  --header "Accept: application/fhir+json"

@@ -1,3 +1,3 @@
 curl --request GET \
-  --url "{{BASE_URL}}/Patient/{{PATIENT_ID}}" \
+  --url "http://localhost:3301/fhir/Group/demo-group-001" \
   --header "Accept: application/fhir+json"

@@ -6,9 +6,7 @@ Small, one-request files for quick API checks and lightweight tooling.
 
 1. Copy one file from this folder (for example `01-group-full.curl`).
 2. Paste it into a cURL-capable client or shell.
-3. Replace templated variables from `examples/yaak/.env.example`:
-   - `BASE_URL`, `ACCESS_TOKEN`, `GROUP_ID`, etc.
-4. Execute.
+3. Execute directly (values are already hardcoded from the local example env values).
 
 ## File set
 

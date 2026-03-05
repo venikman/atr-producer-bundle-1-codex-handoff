@@ -27,18 +27,13 @@ Current backend-focused repo shape for bundle 1:
     references.md
 
   examples/
-    fhir/
+    curl/
       *.json
 
-  postman/
-    atr-group-read.postman_collection.json
-
-  yaak/
-    .env.example
-    README.md
-    atr-group-read.openapi.yaml
-    curl/
+    light/
       *.curl
+      README.md
+      .env.example
 
   server/
     app.ts

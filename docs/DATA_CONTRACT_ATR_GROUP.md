@@ -60,10 +60,10 @@ The server supports direct read for references used by Group members:
 
 ## Example files
 
-- Group full: `examples/fhir/group.demo-group-001.full.json`
-- Group summary: `examples/fhir/group.demo-group-001.summary.json`
-- Patient: `examples/fhir/patient.demo-patient-001.json`
-- Coverage: `examples/fhir/coverage.demo-coverage-001.json`
-- PractitionerRole: `examples/fhir/practitionerrole.demo-pcp-001.json`
-- Practitioner: `examples/fhir/practitioner.demo-pcp-002.json`
-- Organization: `examples/fhir/organization.demo-provider-org-001.json`
+- Group full: `examples/curl/group.demo-group-001.full.json`
+- Group summary: `examples/curl/group.demo-group-001.summary.json`
+- Patient: `examples/curl/patient.demo-patient-001.json`
+- Coverage: `examples/curl/coverage.demo-coverage-001.json`
+- PractitionerRole: `examples/curl/practitionerrole.demo-pcp-001.json`
+- Practitioner: `examples/curl/practitioner.demo-pcp-002.json`
+- Organization: `examples/curl/organization.demo-provider-org-001.json`

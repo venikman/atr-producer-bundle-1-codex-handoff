@@ -1,0 +1,4 @@
+curl --request GET \
+  --url "http://localhost:3301/fhir/Group/demo-group-001?_summary=true" \
+  --header "Accept: application/fhir+json" \
+  --header "Authorization: Bearer demo-atr-token"

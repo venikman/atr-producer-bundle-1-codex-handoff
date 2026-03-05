@@ -1,4 +1,0 @@
-curl --request GET \
-  --url "{{BASE_URL}}/Organization/{{PAYER_ORG_ID}}" \
-  --header "Accept: application/fhir+json" \
-  --header "Authorization: Bearer {{ACCESS_TOKEN}}"

@@ -1,0 +1,4 @@
+curl --request GET \
+  --url "http://localhost:3301/fhir/Practitioner/demo-pcp-002" \
+  --header "Accept: application/fhir+json" \
+  --header "Authorization: Bearer demo-atr-token"

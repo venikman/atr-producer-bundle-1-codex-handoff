@@ -1,4 +1,0 @@
-curl --request GET \
-  --url "{{BASE_URL}}/Group/{{GROUP_ID}}?_summary=true" \
-  --header "Accept: application/fhir+json" \
-  --header "Authorization: Bearer {{ACCESS_TOKEN}}"

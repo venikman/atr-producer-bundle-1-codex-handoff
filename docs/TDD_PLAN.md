@@ -27,4 +27,4 @@ Rule: add one failing test, implement the minimum, run the whole suite, keep all
 ## Final gate
 
 - run `npm run check`
-- ensure all examples/Postman/Yaak artifacts reflect implemented behavior
+- ensure `examples/light/*.curl` and `examples/curl/*.json` reflect implemented behavior
