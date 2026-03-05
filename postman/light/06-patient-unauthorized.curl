@@ -1,0 +1,3 @@
+curl --request GET \
+  --url "{{BASE_URL}}/Patient/{{PATIENT_ID}}" \
+  --header "Accept: application/fhir+json"

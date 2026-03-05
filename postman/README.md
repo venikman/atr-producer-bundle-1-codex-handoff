@@ -7,7 +7,7 @@
 
 ## Light mode (one request per file)
 
-- Use `light/*.postman_collection.json` when your Postman edition handles smaller imports better.
+- Use `light/*.curl` when your tooling handles smaller request imports better.
 - Start with `light/README.md` for quick usage instructions.
 
 ## Shared variables used by these files

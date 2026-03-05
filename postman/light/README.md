@@ -1,29 +1,27 @@
-# Postman Light request files
+# Postman Light cURL files
 
-If your Postman edition cannot easily work with large collections, import one file at a time from this folder.
+Small, one-request files for quick API checks and lightweight tooling.
 
 ## How to use
 
-1. In Postman, choose **Import**.
-2. Select one `*.postman_collection.json` file from this folder.
-3. Open the imported request.
-4. In collection variables, set:
-   - `baseUrl` to your running server URL (for example `http://localhost:3301/fhir`)
-   - `accessToken` to `demo-atr-token`
-5. Send the request.
+1. Copy one file from this folder (for example `01-group-full.curl`).
+2. Paste it into a cURL-capable client or shell.
+3. Replace templated variables from `examples/yaak/.env.example`:
+   - `BASE_URL`, `ACCESS_TOKEN`, `GROUP_ID`, etc.
+4. Execute.
 
 ## File set
 
-- `01-group-full.postman_collection.json`
-- `02-group-summary.postman_collection.json`
-- `03-group-unauthorized.postman_collection.json`
-- `04-group-not-found.postman_collection.json`
-- `05-patient-read.postman_collection.json`
-- `06-patient-unauthorized.postman_collection.json`
-- `07-patient-not-found.postman_collection.json`
-- `08-coverage-read.postman_collection.json`
-- `09-practitionerrole-read.postman_collection.json`
-- `10-practitioner-read.postman_collection.json`
-- `11-organization-provider-read.postman_collection.json`
-- `12-organization-payer-read.postman_collection.json`
-- `13-metadata-read.postman_collection.json`
+- `01-group-full.curl`
+- `02-group-summary.curl`
+- `03-group-unauthorized.curl`
+- `04-group-not-found.curl`
+- `05-patient-read.curl`
+- `06-patient-unauthorized.curl`
+- `07-patient-not-found.curl`
+- `08-coverage-read.curl`
+- `09-practitionerrole-read.curl`
+- `10-practitioner-read.curl`
+- `11-organization-provider-read.curl`
+- `12-organization-payer-read.curl`
+- `13-metadata-read.curl`
