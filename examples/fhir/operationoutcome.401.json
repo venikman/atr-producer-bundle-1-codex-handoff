@@ -1,0 +1,10 @@
+{
+  "resourceType": "OperationOutcome",
+  "issue": [
+    {
+      "severity": "error",
+      "code": "login",
+      "diagnostics": "Missing or invalid bearer token. Use Authorization: Bearer demo-atr-token."
+    }
+  ]
+}

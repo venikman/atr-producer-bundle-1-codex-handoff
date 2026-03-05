@@ -1,0 +1,15 @@
+{
+  "resourceType": "Patient",
+  "id": "demo-patient-002",
+  "active": true,
+  "name": [
+    {
+      "family": "Johnson",
+      "given": [
+        "Marcus"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1975-08-20"
+}

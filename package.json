@@ -1,0 +1,32 @@
+{
+  "name": "atr-producer-group-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.13.0"
+  },
+  "scripts": {
+    "dev": "PORT=0 tsx --watch server/main.ts",
+    "start": "tsx server/main.ts",
+    "test": "rstest --project api",
+    "test:watch": "rstest --project api --watch",
+    "test:coverage": "rstest --project api --coverage",
+    "lint": "biome check .",
+    "lint:fix": "biome check --fix .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run lint && npm run typecheck && npm run test"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.10",
+    "hono": "^4.12.4",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.5",
+    "@rstest/core": "^0.9.0",
+    "@types/node": "^25.3.3",
+    "typescript": "^5.9.3"
+  }
+}

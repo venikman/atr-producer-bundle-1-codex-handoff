@@ -1,0 +1,55 @@
+export const buildCapabilityStatement = () => {
+  return {
+    resourceType: 'CapabilityStatement',
+    status: 'draft',
+    date: '2026-03-04',
+    kind: 'instance',
+    fhirVersion: '4.0.1',
+    format: ['json'],
+    software: {
+      name: 'ATR Group Read Demo',
+      version: '0.1.0',
+    },
+    implementation: {
+      description: 'Educational producer-side slice for ATR Group read.',
+      url: 'http://localhost:3301/fhir',
+    },
+    instantiates: [
+      'http://hl7.org/fhir/us/davinci-atr/ImplementationGuide/hl7.fhir.us.davinci-atr',
+    ],
+    rest: [
+      {
+        mode: 'server',
+        resource: [
+          {
+            type: 'Group',
+            profile: 'http://hl7.org/fhir/us/davinci-atr/StructureDefinition/atr-group',
+            interaction: [{ code: 'read' }],
+            documentation:
+              'Demo implements Group read and read support for resources referenced by Group.member.',
+          },
+          {
+            type: 'Patient',
+            interaction: [{ code: 'read' }],
+          },
+          {
+            type: 'Coverage',
+            interaction: [{ code: 'read' }],
+          },
+          {
+            type: 'PractitionerRole',
+            interaction: [{ code: 'read' }],
+          },
+          {
+            type: 'Practitioner',
+            interaction: [{ code: 'read' }],
+          },
+          {
+            type: 'Organization',
+            interaction: [{ code: 'read' }],
+          },
+        ],
+      },
+    ],
+  };
+};

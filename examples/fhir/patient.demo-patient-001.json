@@ -1,0 +1,15 @@
+{
+  "resourceType": "Patient",
+  "id": "demo-patient-001",
+  "active": true,
+  "name": [
+    {
+      "family": "Rivera",
+      "given": [
+        "Alice"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1980-01-15"
+}

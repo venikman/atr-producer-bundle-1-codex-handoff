@@ -1,0 +1,17 @@
+{
+  "resourceType": "Coverage",
+  "id": "demo-coverage-001",
+  "status": "active",
+  "beneficiary": {
+    "reference": "Patient/demo-patient-001"
+  },
+  "payor": [
+    {
+      "reference": "Organization/demo-payer"
+    }
+  ],
+  "period": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  }
+}

@@ -1,0 +1,134 @@
+scope:
+  label: "ATR-shaped producer demo for Group and member-reference reads"
+  full_conformance: false
+  main_goal: "Allow authenticated consumer requests that return the attribution membership list and reference resources it points to."
+
+stack:
+  template_source: "backend-only reduction of poke"
+  runtime: "Node.js >= 24.13.0"
+  language: "TypeScript"
+  server: "Hono"
+  lint: "Biome"
+  tests: "Rstest"
+  frontend: false
+
+http:
+  base_path: "/fhir"
+  default_port: 3301
+  port_override_env:
+    - "PORT"
+    - "API_PORT"
+  content_type: "application/fhir+json; charset=utf-8"
+
+auth:
+  mode: "static bearer token for demo only"
+  header: "Authorization"
+  token: "demo-atr-token"
+  smart_backend_services: false
+
+routes:
+  - method: "GET"
+    path: "/fhir/Group/:id"
+    auth_required: true
+    success_status: 200
+    response_resource: "Group"
+    query:
+      _summary:
+        supported: true
+        true_behavior: "omit member array"
+    not_found:
+      status: 404
+      response_resource: "OperationOutcome"
+    unauthorized:
+      status: 401
+      response_resource: "OperationOutcome"
+
+  - method: "GET"
+    path: "/fhir/Patient/:id"
+    auth_required: true
+    success_status: 200
+    response_resource: "Patient"
+
+  - method: "GET"
+    path: "/fhir/Coverage/:id"
+    auth_required: true
+    success_status: 200
+    response_resource: "Coverage"
+
+  - method: "GET"
+    path: "/fhir/PractitionerRole/:id"
+    auth_required: true
+    success_status: 200
+    response_resource: "PractitionerRole"
+
+  - method: "GET"
+    path: "/fhir/Practitioner/:id"
+    auth_required: true
+    success_status: 200
+    response_resource: "Practitioner"
+
+  - method: "GET"
+    path: "/fhir/Organization/:id"
+    auth_required: true
+    success_status: 200
+    response_resource: "Organization"
+
+  - method: "GET"
+    path: "/fhir/metadata"
+    auth_required: false
+    success_status: 200
+    response_resource: "CapabilityStatement"
+
+demo_group:
+  id: "demo-group-001"
+  profile: "http://hl7.org/fhir/us/davinci-atr/StructureDefinition/atr-group"
+  type: "person"
+  actual: true
+  quantity: 3
+  managing_entity_ref: "Organization/demo-payer"
+  identifiers:
+    - system: "http://hl7.org/fhir/sid/us-npi"
+      value: "1234567893"
+    - system: "urn:oid:2.16.840.1.113883.4.4"
+      value: "987654321"
+    - system: "https://example.org/atr/contracts"
+      value: "contract-aco-2026-01"
+  top_level_extensions:
+    - "ext-contractValidityPeriod"
+    - "ext-attributionListStatus"
+  member_requirements:
+    - "entity.reference"
+    - "period"
+    - "inactive"
+    - "ext-changeType"
+    - "ext-coverageReference"
+    - "ext-attributedProvider"
+  member_demo_defaults:
+    changeType: "new"
+    inactive: false
+
+demo_reference_ids:
+  patient:
+    - "demo-patient-001"
+    - "demo-patient-002"
+    - "demo-patient-003"
+  coverage:
+    - "demo-coverage-001"
+    - "demo-coverage-002"
+    - "demo-coverage-003"
+  practitionerRole:
+    - "demo-pcp-001"
+  practitioner:
+    - "demo-pcp-001"
+    - "demo-pcp-002"
+  organization:
+    - "demo-provider-org-001"
+    - "demo-payer"
+
+deferred:
+  - "Group search discovery"
+  - "$davinci-data-export"
+  - "SMART Backend Services"
+  - "Reconciliation operations"
+  - "Subscriptions"
+  - "Database persistence"

@@ -1,0 +1,13 @@
+{
+  "resourceType": "Practitioner",
+  "id": "demo-pcp-002",
+  "active": true,
+  "name": [
+    {
+      "family": "Patel",
+      "given": [
+        "Nina"
+      ]
+    }
+  ]
+}

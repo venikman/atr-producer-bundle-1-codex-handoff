@@ -1,0 +1,16 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "demo-pcp-001",
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/demo-pcp-001"
+  },
+  "organization": {
+    "reference": "Organization/demo-provider-org-001"
+  },
+  "code": [
+    {
+      "text": "Primary Care Physician"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "resourceType": "Organization",
+  "id": "demo-provider-org-001",
+  "active": true,
+  "name": "Demo Provider Organization"
+}
